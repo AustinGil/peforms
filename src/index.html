@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <title>Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/bedrocss">
+</head>
+<body>
+  <form action="/api" method="POST" enctype="multipart/form-data">
+    <label for="name">
+      Name
+    </label>
+    <input id="name" name="name" type="email" required>
+
+    <label for="name2">
+      Name2
+    </label>
+    <input id="name2" name="name2" required aria-describedby="name2-desc">
+    <div id="name2-desc">Say something nice</div>
+
+    <label for="name3">
+      Name3
+    </label>
+    <input id="name3" name="name3">
+
+    <label for="checkbox1">
+      checkbox
+    </label>
+    <input id="checkbox1" name="checkbox" type="checkbox" required>
+    <label for="checkbox2">
+      checkbox
+    </label>
+    <input id="checkbox2" name="checkbox" type="checkbox">
+
+    <label for="file">
+      file
+    </label>
+    <input id="file" name="file" multiple type="file">
+
+    <label for="range">
+      range
+    </label>
+    <input id="range" name="range" type="range">
+
+    <fieldset>
+      <label for="radio1">
+        radio1
+      </label>
+      <input id="radio1" name="radio" type="radio" value="1">
+      <label for="radio2">
+        radio2
+      </label>
+      <input id="radio2" name="radio" type="radio" value="2">
+      <label for="radio3">
+        radio3
+      </label>
+      <input id="radio3" name="radio" type="radio" value="3">
+    </fieldset>
+
+    <label for="select">
+      select
+    </label>
+    <select id="select" name="select" multiple>
+      <optgroup label="one">
+        <option></option>
+        <option>1</option>
+      </optgroup>
+      <optgroup label="two">
+        <option>2</option>
+        <option>3</option>
+      </optgroup>
+    </select>
+    <!--
+<label for="textarea">
+textarea
+<textarea id="textarea" name="textarea"></textarea>
+</label> -->
+
+    <button type="submit">Submit</button>
+  </form>
+  <script src="/client.js" type="module"></script>
+</body>
+</html>
